@@ -1,0 +1,43 @@
+POST http://localhost:3000/register/
+Content-Type:application/json
+
+{
+  "username": "hi",
+  "name": "Adam Richard",
+  "password": "123456",
+  "gender": "male",
+  "location": "Detroit"
+}
+
+
+###
+POST http://localhost:3000/login/
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567"
+}
+
+###
+PUT http://localhost:3000/change-password/
+Content-Type:application/json
+
+{
+  "username": "hi",
+  "oldPassword": "1234567",
+  "newPassword": "1234"
+}
+
+DELETE http://localhost:3000/deleteuser/
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "name": "Adam Richard",
+  "password": "richard_567",
+  "gender": "male",
+  "location": "Detroit"
+}
+
+GET http://localhost:3000/getallusers/
